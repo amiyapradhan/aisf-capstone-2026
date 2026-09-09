@@ -76,11 +76,6 @@ Novel injection phrasings that satisfy the intent check are the equivalent gap o
 check reads natural language, so it will never be a boundary. That is why Recommendation 4 exists: an
 irreversible action is held for a human whether or not the injection defence recognised the input.
 
-**One correction to an earlier draft of this section.** The intent check originally matched against the raw
-request, and the direct-injection payload documented in Threat 1 contains the string `cancel_ride` — so the
-substring "cancel" satisfied the check and the cancellation executed. Verified against the demonstrator and
-fixed: intent is now read from the request with JSON spans and literal tool names removed, and both the
-direct and indirect variants are refused. Threat 1's Resolved status reflects the fixed build.
 
 ## 6. Recommendations
 
